@@ -5,7 +5,7 @@ Start-Transcript -Path "<path_to_log_file>"
 $ErrorActionPreference = "Continue"
 
 # Dynamic group name
-$ADGroupname = Get-ADGroup "<GroupName>" -Server czbortechvdc001.kktech.local
+$ADGroupname = Get-ADGroup "<GroupName>" -Server <DC_where_group_is_located>
 
 # Input path
 $inputupn = "<path_to_input_csv>"
